@@ -1,3 +1,7 @@
+1.2.0
+
+  Generic skill install docs
+
 1.1.0
 
   Remove COVERAGE.md checklist
