@@ -32,15 +32,16 @@ so you can tell which advice carries verbatim reviewer language behind it.
 
 ## Installing
 
-The skill is a directory of markdown. Copy or symlink it into whichever skills path your agent
-reads.
+The skill is a directory of markdown. Copy or symlink it into your agent's skills path:
 
 ```bash
-# Cursor
-ln -s "$PWD/app-store-review-bot" ~/.cursor/skills/app-store-review-bot
+ln -s "$PWD/app-store-review-bot" <your-agent-skills-dir>/app-store-review-bot
+```
 
-# Claude Code
-ln -s "$PWD/app-store-review-bot" ~/.claude/skills/app-store-review-bot
+Or install via the skills CLI:
+
+```bash
+npx skills add stevederico/app-store-review-bot
 ```
 
 ## Using it
