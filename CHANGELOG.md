@@ -1,3 +1,7 @@
+1.3.0
+
+  Cite 300-plus rejection base
+
 1.2.0
 
   Generic skill install docs

@@ -5,8 +5,8 @@ description: Audits an iOS app's metadata, screenshots, subscription design, pri
 
 # App Store Review Bot
 
-A pre-submission audit and rejection-response playbook for iOS apps, built from patterns that
-recur across real App Review rejections and appeals.
+A pre-submission audit and rejection-response playbook for iOS apps, built from experience
+across 300+ App Store rejections, appeals, and App Review Board rulings.
 
 The guidelines themselves are published by Apple. What this skill adds is the operational
 layer: which guidelines fire on which app shapes, what the canned rejection text actually

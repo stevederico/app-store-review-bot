@@ -3,11 +3,11 @@
 An agent skill that audits an iOS app before you submit it to App Review, and tells you what
 to do when a rejection comes back.
 
-Apple publishes the App Store Review Guidelines. What they do not publish is the operational
-layer: which guidelines actually fire on which app shapes, what the canned rejection text
-means in practice, what fix clears it, and which rejections are worth arguing with. That is
-what this skill encodes, drawn from patterns that recur across real rejections, appeals, and
-App Review Board rulings.
+Built from experience across **300+ App Store rejections**, plus the appeals and App Review
+Board rulings that followed them. Apple publishes the App Store Review Guidelines. What they
+do not publish is the operational layer: which guidelines actually fire on which app shapes,
+what the canned rejection text means in practice, what fix clears it, and which rejections
+are worth arguing with. That is what this skill encodes.
 
 ## What is in it
 
