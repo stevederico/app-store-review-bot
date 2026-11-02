@@ -21,7 +21,7 @@ Companion files:
 
 Guidelines: <https://developer.apple.com/app-store/review/guidelines/>
 
-**This file is current through Apple's June 8, 2026 update.** No copy of the guidelines is
+**This file is current through Apple's October 16, 2026 update.** No copy of the guidelines is
 bundled here on purpose — a snapshot starts contradicting Apple within months, and Apple's text
 is theirs, not redistributable under this repository's license.
 
@@ -174,7 +174,7 @@ reachable in a few taps from launch, or delete the bullet. Also confirm the copy
 version being submitted, not a later build. Privacy information, description, screenshots, and
 previews must stay aligned with the core experience across versions.
 
-**2.3.1 Hidden features** — "We noticed that your app may contain hidden features,
+**2.5.19 / 2.3.1 Hidden features** — "We noticed that your app may contain hidden features,
 functionality, or content," plus a specific accusation, then: "Attempting to hide features,
 functionality, or content in your app may lead to removal from the Apple Developer Program."
 
@@ -190,14 +190,22 @@ in the notes. Pre-empt with reviewer notes stating plainly what the app does not
 The current guideline makes detailed reviewer notes a requirement rather than a tactic. Its
 words: all new features, functionality, and product changes "must be described with specificity
 in the Notes for Review section of App Store Connect (generic descriptions will be rejected) and
-accessible for review." So "bug fixes and improvements" in the notes is itself a 2.3.1 exposure.
+accessible for review." So "bug fixes and improvements" in the notes is itself a 2.3.1(a) exposure.
 2.3.12 says the same about "What's New" text: only genuine bug fixes, security updates, and
 performance work may use a generic description.
 
 Same guideline also covers misleading marketing of the app anywhere, inside or outside the App
 Store, including promoting a false price — grounds for removal and account termination.
 
-Pushing back on a factually wrong 2.3.1 can draw an escalation citing Section 3.2(f) of the
+Numbering since the October 16, 2026 update: the hidden-features ban itself now lives in
+**2.5.19** — "Don't include any hidden, dormant, or undocumented features in your app";
+hiding undocumented features "such as through code obfuscation or other methods" is grounds for
+removal of the app and termination of the developer account. 2.3.1 is split: **2.3.1(a)**
+covers reviewer-notes specificity and misleading marketing; **2.3.1(b)** makes egregious or
+repeated behavior grounds for removal from the Developer Program. A current hidden-features
+rejection may cite 2.5.19, 2.3.1, or both — answer the substance either way. Do not obfuscate.
+
+Pushing back on a factually wrong 2.5.19 / 2.3.1 can draw an escalation citing Section 3.2(f) of the
 Developer Program License Agreement — a termination warning — with no specifics attached. That
 is a signal to stop replying and appeal. See [APPEALS.md](APPEALS.md).
 
@@ -296,7 +304,7 @@ hoping nobody notices. Notes should explain any non-material polish differences.
 must clearly describe new features and product changes. Generic text is allowed only for simple
 bug fixes, security updates, and performance improvements. Significant changes must be listed.
 
-This pairs with 2.3.1 reviewer-notes specificity. "Bug fixes and improvements" on a feature
+This pairs with 2.3.1(a) reviewer-notes specificity. "Bug fixes and improvements" on a feature
 release is a dual exposure. Fix: bullet the real changes in What's New and mirror them in Notes
 for Review with tap paths.
 
@@ -310,6 +318,13 @@ Failure modes: evergreen marketing dressed as an "event," wrong deep links, time
 match reality across locales, and creatives that sell the whole app instead of the event. Fix:
 pick a real event type, align schedules, test the deep link cold, and keep copy event-specific.
 Read Apple's In-App Events guide before the first featured event.
+
+**2.3.14 Creative assets** *(guideline text, new October 16, 2026; no rejection in this record)* —
+creative assets can appear across the App Store, including the product page header and search
+results. They must pertain to the app's content and functionality or overarching brand, follow
+standard metadata guidelines, and be appropriate for all audiences. No inappropriate content,
+references to other apps with an intent to mislead, unverifiable product claims, or specific or
+discounted pricing. Treat a "50% off" or "#1 app" banner as a rejection.
 
 **Extra keyword surface via a second localization.** Adding a Spanish (Mexico) localization and
 writing its description and keyword field in English gets that text indexed in the US store as
@@ -404,7 +419,7 @@ code which introduces or changes features or functionality of the app." The only
 educational apps teaching or testing code, which must make the code fully viewable and editable
 by the user and may not use it for anything else.
 
-This is the guideline behind most 2.3.1 hidden-feature findings, and it is what makes
+This is the guideline behind most 2.5.19 / 2.3.1 hidden-feature findings, and it is what makes
 server-driven UI, remote feature flags that alter reviewed behavior, and JavaScript bundle
 hot-updates dangerous rather than merely risky. Configuration values are fine; shipping new
 behavior after review is not.
@@ -661,8 +676,9 @@ Fix: delay or cancel the opportunistic SKU, ship factual reporting without gore-
 and if you collect donations, document the real recipient. Do not argue that satire or awareness
 excuses a paid skin tied to a massacre.
 
-**1.2 User-Generated Content** *(guideline text; no rejection in this record)* — any app with
-user content or social features must include all four of these, and reviewers check for each:
+**1.2 User-Generated Content** *(guideline text; no rejection in this record)* — any app that
+lets users create, generate, upload, or share content — social media, UGC platforms, and, as
+of October 16, 2026, explicitly AI content creation apps — must include all four of these, and reviewers check for each:
 
 1. A method for filtering objectionable material from being posted
 2. A mechanism to report offensive content, plus timely responses to those reports
@@ -671,7 +687,9 @@ user content or social features must include all four of these, and reviewers ch
 
 Missing any one is a rejection. Beyond that, an app that ends up used primarily for pornography,
 random or anonymous chat, "hot-or-not" style objectification of real people, physical threats, or
-bullying "may be removed without notice" — no rejection cycle, no appeal window. Egregious or
+bullying "may be removed without notice" — no rejection cycle, no appeal window. Apple names
+intellectual property infringement, nonconsensual intimate imagery, and anonymous bullying as
+the core risks — an AI image generator without NCII safeguards is squarely in scope. Egregious or
 repeated failure to moderate is grounds for removal from the Developer Program.
 
 Put the tap path to filter settings, report, block, and contact in the reviewer notes on the
@@ -1514,7 +1532,7 @@ poker, casino, horse racing) or lotteries require licenses in every location ser
 geo-restricted there, and must be **free** on the App Store. Illegal gambling aids (including
 card counters) are banned. Lottery apps need consideration, chance, and a prize.
 
-Betting-adjacent utilities that are not licensed gambling still draw false-positive 2.3.1 heat —
+Betting-adjacent utilities that are not licensed gambling still draw false-positive 2.5.19 / 2.3.1 heat —
 say plainly in notes what is *not* real-money wagering. True RMG without geo + license fails
 5.3.4 regardless of notes.
 
@@ -1582,8 +1600,9 @@ Run in this order. Report findings before changing any code.
    any, say so plainly — that is a spam rejection waiting to happen.
 4. **Substance, against 4.2.** Count what the app does against the nearest competitor and
    write the comparison into the reviewer notes.
-5. **Hidden features, against 2.3.1.** Every feature visible and fully accessible during
-   review. Audit remote config, feature flags, server-driven UI, and every third-party SDK.
+5. **Hidden features, against 2.5.19 and 2.3.1.** Every feature visible and fully accessible
+   during review. Audit remote config, feature flags, server-driven UI, and every third-party
+   SDK. No dormant or undocumented code paths, and no obfuscation hiding them.
 6. **Payment routing, against 3.1.1 and 3.1.3(e).** Anything that unlocks digital content or
    functionality must use IAP — flag license keys, promo codes, QR unlocks, web-purchased
    entitlements, and crypto wallets. Conversely, anything consumed outside the app must *not*
@@ -1661,8 +1680,22 @@ Run in this order. Report findings before changing any code.
 29. **Reviewer notes.** Demo credentials, path to the core feature, IAP test steps, an
     explanation of every permission requested, the Delete Account tap path, a statement of what
     the app does not do if it is in a regulated category, and every change in this build
-    described specifically — 2.3.1 requires specificity and rejects generic descriptions.
+    described specifically — 2.3.1(a) requires specificity and rejects generic descriptions.
     Template in [TEMPLATES.md](TEMPLATES.md).
+30. **Creative assets, against 2.3.14.** Assets used in the product page header or search
+    results must pertain to the app's content, functionality, or brand, suit all audiences,
+    and contain no references to other apps meant to mislead, no unverifiable claims, and no
+    specific or discounted prices.
+31. **User-generated and AI-generated content, against 1.2 and 1.2.1(a).** Social, UGC, and
+    AI content creation apps need filtering, reporting with timely response, user blocking,
+    and published contact info; plan for nonconsensual intimate imagery explicitly. Creator
+    apps must flag content above the age rating and gate it by verified or declared age.
+32. **Ads, against 2.5.18.** Interstitials clearly labeled, no trick taps, large visible
+    close/skip buttons, and an in-app way to report inappropriate or age-inappropriate ads.
+33. **Store-action gating, against 3.2.2(x).** No rating, review, or download of other apps
+    required to access functionality or content.
+34. **Code of Conduct signals, against 5.6.4.** Excessive negative reviews and refund requests
+    can count against the developer account; fix the causes before resubmitting.
 
 ## When a rejection arrives
 

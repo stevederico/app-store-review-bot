@@ -1,3 +1,8 @@
+1.4.0
+
+  Update to October 16, 2026 guidelines
+  Add 2.5.19, 2.3.14, 2.5.18, 3.2.2(x), 5.6 checks
+
 1.3.0
 
   Cite 300-plus rejection base
