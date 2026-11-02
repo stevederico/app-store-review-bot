@@ -21,7 +21,7 @@ Every numbered App Store Review Guideline (1.x–5.x) has a completed entry in `
 
 
 
-**Current through Apple's June 8, 2026 guidelines update.** No copy of Apple's text is bundled
+**Current through Apple's October 16, 2026 guidelines update.** No copy of Apple's text is bundled
 here — the skill carries the guidelines URL and tells the agent to fetch the live page for an
 audit or a cited rejection, compare the "Last Updated" date, and flag entries that may have
 drifted. Apple renumbers: two guideline numbers in an earlier draft of this skill had moved
